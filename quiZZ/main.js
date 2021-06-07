@@ -39,44 +39,44 @@ function oskar3() {
 
 
  if (arr[0] === 1) {
-var img = "matte";
+var img = "740";
 
-  var svar1 = '"ratt" onclick = "gameover();"'
+  var svar4 = '"ratt" onclick = "gameover();"'
 
 
 
     var svar2 = '"ratt" onclick = "gameover();"'
-  var svar4 = '"ratt" onclick = "gameover();"'
+  var svar1 = '"ratt" onclick = "gameover();"'
 var svar3 = '"ratt" onclick ="igen();" '
-var alternativ1 = "10";
-var alternativ2 = "0,9";
-var alternativ3 = "1";
-var alternativ4 = "6";
-var fraga = "what will the equation be equal to"
+var alternativ1 = " volvo v70";
+var alternativ2 = "audi rs6";
+var alternativ3 = "volvo 740";
+var alternativ4 = "volvo 940";
+var fraga = "what car is this"
 
 arr.shift();
 
 
 }
 else if (arr[0] === 2) {
-  var img = "matte2";
+  var img = "v70";
 
 
-var svar4 = "knappratt";
-var alternativ1 = "19";
-var alternativ2 = "13";
-var alternativ3 = "20";
-var alternativ4 = "21";
 
-  var svar1 = '"ratt" onclick = "gameover();"'
+var alternativ1 = "volvo v70";
+var alternativ2 = "volvo 940";
+var alternativ3 = "skoda octavia";
+var alternativ4 = "bmw x6";
+
+  var svar2 = '"ratt" onclick = "gameover();"'
 
 
-var svar2 = '"ratt" onclick = "igen() ;"  '
+var svar1 = '"ratt" onclick = "igen() ;"  '
 
   var svar3 = '"ratt" onclick = "gameover();"'
 
   var svar4 = '"ratt" onclick = "gameover();"'
-  var fraga = "what will the equation be equal to"
+  var fraga = "what car is this"
 
 
 
@@ -86,27 +86,27 @@ arr.shift();
 
 }
 else if (arr[0] === 3) {
-  var img = "matte3";
-  var svar3 = '"ratt" onclick = "igen() ;"  '
+  var img = "modelx";
+  var svar2 = '"ratt" onclick = "igen() ;"  '
 
     var svar4 = '"ratt" onclick = "gameover();"'
 
-    var svar2 = '"ratt" onclick = "gameover();"'
+    var svar3 = '"ratt" onclick = "gameover();"'
 
 
-  var svar1 = '"ratt" onclick ="igen();" '
-  var alternativ1 = "*";
-  var alternativ2 = "-";
-  var alternativ3 = "+";
-  var alternativ4 = "/";
-  var fraga = "what calculation method should you use in the equation"
+  var svar1 = ' "ratt" onclick = "gameover();" '
+  var alternativ1 = "model y";
+  var alternativ2 = "model x";
+  var alternativ3 = "cybertruck";
+  var alternativ4 = "model s";
+  var fraga = "witch tesla car is this"
 
 arr.shift();
 
 
 }
 else if (arr[0] === 4) {
-  var img = "matte4";
+  var img = "tesla";
 
   var knappratt = svar4
   var svar4 = '"ratt" onclick ="igen();" '
@@ -116,17 +116,17 @@ else if (arr[0] === 4) {
 
     var svar3 = '"ratt" onclick = "gameover();"'
 
-  var alternativ1 = "cone = 3 white icecream = 1 red icecream = 2 ";
-  var alternativ2 = "cone = 1 white icecream = 4 red icecream = 1";
-  var alternativ3 = "cone = 2 white icecream = 2 red icecream = 2";
-  var alternativ4 = "cone = 3 white icecream = 2 red icecream = 1";
-  var fraga = "solve the equation system"
+  var alternativ1 = " BMW";
+  var alternativ2 = "Volvo";
+  var alternativ3 = "Polestar";
+  var alternativ4 = "Tesla";
+  var fraga = "what car brand is this "
 
 arr.shift();
 
 }
 else if (arr[0] === 5) {
-  var img = "matte5";
+  var img = "volkswagen";
 
   var svar1 = '"ratt" onclick ="igen();" '
   var svar4 = '"ratt" onclick = "gameover();"'
@@ -135,18 +135,16 @@ else if (arr[0] === 5) {
 
     var svar3 = '"ratt" onclick = "gameover();"'
 
-  var alternativ1 = "pq formel";
-  var alternativ2 = "andragradsekvations formel";
-  var alternativ3 = "potens formel";
-  var alternativ4 = "toptriangel formel";
-  var fraga = "vad kallas denna formel"
+  var alternativ1 = "Volkswagen";
+  var alternativ2 = "BMW";
+  var alternativ3 = "Volvo";
+  var alternativ4 = "Porshe";
+  var fraga = "What car brand is ";
 
 arr.shift();
-
-
 }
 else if (arr[0] === 6) {
-  var img = "matte6";
+  var img = "rs6";
 
   var svar2 = '"ratt" onclick = "igen() ;"  '
 
@@ -157,11 +155,11 @@ else if (arr[0] === 6) {
   var svar4 = '"ratt" onclick = "gameover();"'
 
   var svar3 = '"ratt" onclick = "gameover();"'
-  var alternativ1 = "7";
-  var alternativ2 = "5";
-  var alternativ3 = "3,5";
-  var alternativ4 = "25";
-  var fraga = "hello"
+  var alternativ1 = "audi rs5";
+  var alternativ2 = "audi rs6";
+  var alternativ3 = "audi rs8";
+  var alternativ4 = "audi rs3";
+  var fraga = "what audi is this"
 
 
 arr.shift();
@@ -603,21 +601,22 @@ lol();
 oskar();
 console.log("hello");
 }
-function prevent(e) {
+function prevent1(e) {
 e.preventDefault();
 lol();
 oskar1();
 console.log("hello");
 }
-function prevent(e) {
+function prevent2(e) {
 e.preventDefault();
 lol();
 oskar2();
 console.log("hello");
 }
-function prevent(e) {
+function prevent3(e) {
 e.preventDefault();
 lol();
+ hej = 3
 oskar3();
 console.log("hello");
 }
@@ -627,6 +626,9 @@ function igen(e) {
 
 if (arr.length === 0 ) {
 done();
+}
+else if (hej === 3) {
+oskar3()
 }
 else {
   console.log("sdallo");
@@ -640,4 +642,4 @@ else {
 knapp1.onclick = prevent;
 knapp2.onclick = prevent;
 knapp3.onclick = prevent;
-knapp4.onclick = prevent;
+knapp4.onclick = prevent3;
