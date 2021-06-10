@@ -598,25 +598,31 @@ box1.innerHTML = ' <p> game over </p> ';
 function prevent(e) {
 e.preventDefault();
 lol();
+
+
 oskar();
 console.log("hello");
 }
 function prevent1(e) {
 e.preventDefault();
 lol();
+
+hej = 1;
 oskar1();
 console.log("hello");
 }
 function prevent2(e) {
 e.preventDefault();
 lol();
+hej = 2;
+
 oskar2();
 console.log("hello");
 }
 function prevent3(e) {
 e.preventDefault();
 lol();
- hej = 3
+hej = 3;
 oskar3();
 console.log("hello");
 }
@@ -630,6 +636,12 @@ done();
 else if (hej === 3) {
 oskar3()
 }
+else if (hej === 2) {
+oskar2()
+}
+else if (hej === 1) {
+oskar1()
+}
 else {
   console.log("sdallo");
 
@@ -640,6 +652,6 @@ else {
 
 
 knapp1.onclick = prevent;
-knapp2.onclick = prevent;
-knapp3.onclick = prevent;
+knapp2.onclick = prevent1;
+knapp3.onclick = prevent2;
 knapp4.onclick = prevent3;
