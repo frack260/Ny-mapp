@@ -598,7 +598,7 @@ box1.innerHTML = ' <p> game over </p> ';
 function prevent(e) {
 e.preventDefault();
 lol();
-
+hej = 0;
 
 oskar();
 console.log("hello");
@@ -641,6 +641,9 @@ oskar2()
 }
 else if (hej === 1) {
 oskar1()
+}
+else if (hej === 0) {
+oskar()
 }
 else {
   console.log("sdallo");
