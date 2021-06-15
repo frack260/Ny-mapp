@@ -329,97 +329,97 @@ box1.innerHTML =  ' <p>  '+ point + ' </p> ' + ' <div class = "box3">'  + '<img 
 function oskar1() {
 
  if (arr[0] === 1) {
-var img = "matte";
-  var svar1 = '"ratt" onclick = "gameover();"'
+var img = "rem";
+  var svar3 = '"ratt" onclick = "gameover();"'
     var svar2 = '"ratt" onclick = "gameover();"'
   var svar4 = '"ratt" onclick = "gameover();"'
-var svar3 = '"ratt" onclick ="igen();" '
-var alternativ1 = "10";
-var alternativ2 = "0,9";
-var alternativ3 = "1";
-var alternativ4 = "6";
-var fraga = "what will the equation be equal to"
+var svar1 = '"ratt" onclick ="igen();" '
+var alternativ1 = "re zero";
+var alternativ2 = "seven deadly sins";
+var alternativ3 = "naruto";
+var alternativ4 = "domestic girlfriend";
+var fraga = "what anime is the girl from"
 arr.shift();
 }
 else if (arr[0] === 2) {
-  var img = "matte2";
-var svar4 = "knappratt";
-var alternativ1 = "19";
-var alternativ2 = "13";
-var alternativ3 = "20";
-var alternativ4 = "21";
+  var img = "megumin";
+
+var alternativ1 = "a certain magical index";
+var alternativ2 = "Dragonball";
+var alternativ3 = "JoJos bizzare adventure";
+var alternativ4 = "Konosuba";
   var svar1 = '"ratt" onclick = "gameover();"'
-var svar2 = '"ratt" onclick = "igen() ;"  '
+var svar4 = '"ratt" onclick = "igen() ;"  '
   var svar3 = '"ratt" onclick = "gameover();"'
-  var svar4 = '"ratt" onclick = "gameover();"'
-  var fraga = "what will the equation be equal to"
+  var svar2 = '"ratt" onclick = "gameover();"'
+  var fraga = "what anime is the girl from"
 arr.shift();
 }
 else if (arr[0] === 3) {
-  var img = "matte3";
+  var img = "rezero1";
   var svar3 = '"ratt" onclick = "igen() ;"  '
-    var svar4 = '"ratt" onclick = "gameover();"'
+    var svar1 = '"ratt" onclick = "gameover();"'
     var svar2 = '"ratt" onclick = "gameover();"'
-  var svar1 = '"ratt" onclick ="igen();" '
-  var alternativ1 = "*";
-  var alternativ2 = "-";
-  var alternativ3 = "+";
-  var alternativ4 = "/";
-  var fraga = "what calculation method should you use in the equation"
+  var svar4 = '"ratt" onclick ="igen();" '
+  var alternativ1 = "a guy that saves a princess and kills holy knights";
+  var alternativ2 = "a guy that wants to learn the power of zero";
+  var alternativ3 = " its about a girl named zero two  ";
+  var alternativ4 = "a guy that dies but he comes back to life ";
+  var fraga = "what is re zero about?"
 arr.shift();
 }
 else if (arr[0] === 4) {
-  var img = "matte4";
+  var img = "felix2";
   var knappratt = svar4
-  var svar4 = '"ratt" onclick ="igen();" '
+  var svar2 = '"ratt" onclick ="igen();" '
   var svar1 = '"ratt" onclick = "gameover();"'
-    var svar2 = '"ratt" onclick = "gameover();"'
+    var svar4 = '"ratt" onclick = "gameover();"'
     var svar3 = '"ratt" onclick = "gameover();"'
-  var alternativ1 = "cone = 3 white icecream = 1 red icecream = 2 ";
-  var alternativ2 = "cone = 1 white icecream = 4 red icecream = 1";
-  var alternativ3 = "cone = 2 white icecream = 2 red icecream = 2";
-  var alternativ4 = "cone = 3 white icecream = 2 red icecream = 1";
-  var fraga = "solve the equation system"
+  var alternativ1 = "Tjej";
+  var alternativ2 = "Kille";
+  var alternativ3 = "Sloth";
+  var alternativ4 = "The character has no gender";
+  var fraga = "what gender is this character"
 
 arr.shift();
 
 }
 else if (arr[0] === 5) {
-  var img = "matte5";
-  var svar1 = '"ratt" onclick ="igen();" '
+  var img = "dragonball1";
+  var svar3 = '"ratt" onclick ="igen();" '
   var svar4 = '"ratt" onclick = "gameover();"'
 
     var svar2 = '"ratt" onclick = "gameover();"'
 
-    var svar3 = '"ratt" onclick = "gameover();"'
+    var svar1 = '"ratt" onclick = "gameover();"'
 
-  var alternativ1 = "pq formel";
-  var alternativ2 = "andragradsekvations formel";
-  var alternativ3 = "potens formel";
-  var alternativ4 = "toptriangel formel";
-  var fraga = "vad kallas denna formel"
+  var alternativ1 = " about a guy that like do have dragons in balls";
+  var alternativ2 = "about a guy that want to become a dragon";
+  var alternativ3 = "about a guy that trains artial marts";
+  var alternativ4 = "about a guy that have super powers and defends earth from dragons";
+  var fraga = "What is Dragonball about?"
 
 arr.shift();
 
 
 }
 else if (arr[0] === 6) {
-  var img = "matte6";
+  var img = "attackontitan";
 
-  var svar2 = '"ratt" onclick = "igen() ;"  '
+  var svar1 = '"ratt" onclick = "igen() ;"  '
 
 
-    var svar1 = '"ratt" onclick = "gameover();"'
+    var svar2 = '"ratt" onclick = "gameover();"'
 
 
   var svar4 = '"ratt" onclick = "gameover();"'
 
   var svar3 = '"ratt" onclick = "gameover();"'
-  var alternativ1 = "7";
-  var alternativ2 = "5";
-  var alternativ3 = "3,5";
-  var alternativ4 = "25";
-  var fraga = "hello"
+  var alternativ1 = "Attack on titans";
+  var alternativ2 = "Attack of titans";
+  var alternativ3 = "Attack the titans";
+  var alternativ4 = "Titans attack";
+  var fraga = "What is this anime called"
 
 
 arr.shift();
@@ -468,8 +468,8 @@ else if (arr[0] === 2) {
 
 
 var svar4 = "knappratt";
-var alternativ1 = "19";
-var alternativ2 = "13";
+var alternativ2 = "19";
+var alternativ1 = "13";
 var alternativ3 = "20";
 var alternativ4 = "21";
 
@@ -655,6 +655,6 @@ else {
 
 
 knapp1.onclick = prevent;
-knapp2.onclick = prevent1;
-knapp3.onclick = prevent2;
+knapp3.onclick = prevent1;
+knapp2.onclick = prevent2;
 knapp4.onclick = prevent3;
