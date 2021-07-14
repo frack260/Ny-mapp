@@ -1,0 +1,46 @@
+
+#box{
+height: 100px;
+width: 100px;
+margin: 100px;
+}
+
+
+.box1{
+background-color: blue;
+width: 100px;
+height: 100px;
+cursor: pointer;
+}
+.no-highlight {
+	user-select: none;	//Chrome, Opera
+	-ms-user-select: none;	//IE
+	-moz-user-select: none;	//Firefox
+	-webkit-touch-callout: none;	//iOS Safari
+	-webkit-user-select: none;	//Safari
+}
+
+.buttons{
+cursor: pointer;
+
+
+}
+.box{
+height: 150px;
+width: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+
+}
+.box4{
+background-color: yellow;
+width: 100px;
+height: 100px;
+
+
+}
+.boxlol{
+margin: 20px;
+
+}

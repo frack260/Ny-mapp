@@ -94,10 +94,6 @@ else {
 }
 
 
-  if (email.value.length >= 20 ) {
-    messages1.push('Password must be less than 20 characters')
-console.log('sadlpmkasmpd');
-  }
   if (telefonnummer.value.length > 11 ) {
     messages2.push('Your number must be less than 11 characters')
       console.log('78y372');
