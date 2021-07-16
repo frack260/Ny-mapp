@@ -44,3 +44,17 @@ height: 100px;
 margin: 20px;
 
 }
+#box3{
+width: 200px;
+height: 250px;
+display: flex;
+align-items: center;
+
+
+}
+#boxx{
+
+
+height: 200px;
+width: 200px;
+}

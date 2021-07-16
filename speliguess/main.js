@@ -1,6 +1,8 @@
 let box = document.querySelector('#box')
 let box1 = document.querySelector('#box1')
 let box2 = document.querySelector('#box2')
+let box3 = document.querySelector('#box3')
+
 let button1 = document.querySelector('#button1')
 let buttonupg1 = document.querySelector('#buttonupg1')
 
@@ -19,6 +21,12 @@ else {
   b = 100
 }
 
+if (localStorage.kkk === undefined) {
+kkk = 0
+}else {
+kkk = localStorage.kkk
+console.log('kkk');
+}
 load()
 
 
@@ -31,11 +39,11 @@ console.log(localStorage.score);
 
 if (localStorage.score === undefined ) {
  number = 1
-
+console.log('bajs');
 }else {
 JSON.parse(myscore)
 JSON.parse(b)
-
+JSON.parse(kkk)
 number = myscore
   console.log('lol');
 }
@@ -66,13 +74,16 @@ score = number
 
 localStorage.setItem("score", score)
 localStorage.setItem("b", b)
+localStorage.setItem("kkk", kkk)
 
 
 setTimeout(save, 250)
 }
 function load() {
+
  myscore = localStorage.getItem("score")
 stock1 = localStorage.getItem("b")
+upg1 = localStorage.getItem("kkk")
 
 
 console.log(myscore);
@@ -95,14 +106,37 @@ number = number - 250
   }
 
 }
+k = 0
+oskar2()
+function oskar2() {
 
 
-k= 0
+kk = 1000
+
+if (kkk == 0 ) {
+kk = 1250
+}else if(kkk == 1){
+  kk = kkk*kk*1.25
+}else {
+  kk  = Math.round( (kkk*0.75)*kk*1.25)
+}
+
+k = 5*kkk
+box3.innerHTML= '<h2 id="upgrade"> '+ kk +'</h2>'
+
+}
+
+
+
 function upg1() {
-if (number >= 2000) {
-number = number - 2000
+if (number >= kk) {
+  console.log(kk);
+kkk++
+box3.innerHTML= '<h2> '+ kk +'</h2>'
+kk
+number = number - kk
 k = k + 5
-
+oskar2()
 }
 
 
@@ -111,6 +145,8 @@ k = k + 5
 
 function oskar() {
 box.innerHTML = '<h2 class="no-highlight"> '+ number +'</h2> '
+
+
 console.log(number);
 
 
@@ -120,13 +156,16 @@ setTimeout(oskar, 100)
 
 
 function oskar1() {
+console.log(kkk);
  number+=1
  setTimeout(oskar1, 750)
 }
 
 
 function add() {
+
 x = 10 + k
+
 number+=x
 console.log(x);
 }
