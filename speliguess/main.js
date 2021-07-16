@@ -114,7 +114,7 @@ function oskar2() {
 kk = 1000
 
 if (kkk == 0 ) {
-kk = 1250
+kk = 1000
 }else if(kkk == 1){
   kk = kkk*kk*1.25
 }else {
