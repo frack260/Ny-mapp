@@ -1,8 +1,26 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+body{
+height: 5000px;
+
+}
 
 #box{
-height: 100px;
-width: 100px;
-margin: 100px;
+height: 75px;
+width: 300px;
+background-color: #19fc4e;
+float: left;
+justify-content: center;
+display: flex;
+align-items: center;
+border-radius: 5px;
+box-shadow: 0px 0px 10px 5px 	 #51fc79;
+z-index: 1;
+font-size: 20px;
 }
 
 
@@ -57,4 +75,53 @@ align-items: center;
 
 height: 200px;
 width: 200px;
+}
+
+
+.scoreboard{
+
+
+}
+.wrapper{
+width: 600px;
+height: 100px;
+
+}
+
+.box5{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+width: 295px;
+height: 75px;
+border: 1px solid white;
+float: right;
+font-size: 10px;
+}
+
+body{
+background-color: black;
+	color: white;
+}
+
+#cookie {
+  background: red;
+  width: 300px;
+  height: 300px;
+}
+
+#box6{
+height: 100px;
+width: 100px;
+z-index: 10
+}
+
+.windowbox{
+width: 500px;
+height: 400px;
+overflow: hidden;
+overflow-y: scroll;
+
+
 }
