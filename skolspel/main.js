@@ -74,7 +74,7 @@ modalBody.innerHTML = '<p> hello'+player.classType+'</p>';
 
     break;
     case "jimmie":
-  modalBody.innerHTML = '<p> hello'+player.classType+'</p>';
+  modalBody.innerHTML = '<p> Alex även känd som'+player.classType+'</p>';
     modal.classList.add('active')
     overlay.classList.add('active')
 
