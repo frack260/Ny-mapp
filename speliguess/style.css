@@ -4,10 +4,7 @@ padding: 0;
 
 }
 
-body{
-height: 5000px;
 
-}
 
 #box{
 height: 75px;
@@ -46,14 +43,11 @@ cursor: pointer;
 .box{
 height: 150px;
 width: 100%;
-justify-content: center;
-align-items: center;
-display: flex;
 
 }
 .box4{
-background-color: yellow;
-width: 100px;
+
+width:200px;
 height: 100px;
 
 
@@ -63,15 +57,15 @@ margin: 20px;
 
 }
 #box3{
-width: 200px;
-height: 250px;
+width: 100px;
+height: 100px;
 display: flex;
 align-items: center;
 
 
 }
-#boxx{
-
+.boxx{
+background-color: yellow;
 
 height: 200px;
 width: 200px;
@@ -118,10 +112,60 @@ z-index: 10
 }
 
 .windowbox{
-width: 500px;
-height: 400px;
+min-width: 500px;
+max-height: 400px;
 overflow: hidden;
 overflow-y: scroll;
+background-color: #0c0b0f;
 
 
+}
+
+.image{
+
+
+max-width: 100%;
+max-height: 100%;
+}
+.button12{
+float: right;
+margin-right: 20px;
+padding: 10px 20px;
+background: none;
+color: white;
+}
+
+.opacity{
+	opacity: 0.5;
+
+}
+
+
+.hide{
+visibility: hidden;
+
+}
+
+.boxl{
+width: 500px;
+height: 200px;
+
+
+
+}
+
+#bigbox{
+display: flex;
+align-items: center;
+width: 100%;
+
+
+}
+
+#bigbox1{
+width: 100%;
+max-height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
