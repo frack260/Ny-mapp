@@ -92,6 +92,7 @@ width: 100%;
 height: 500px;
 display: flex;
 align-items: center;
+
 justify-content: center;
 
 }
@@ -108,6 +109,12 @@ img{
 
 width: 100%
 }
+.img1{
+width: 5%;
+height: 60px;
+margin: 20px;
+
+}
 .champ{
   display: flex;
   align-items: center;
@@ -115,6 +122,18 @@ width: 100%
   height: 60.5px;
 border: 1px solid white;
 overflow: hidden;
+}
+.goodGuy{
+color: green;
+
+
+}
+
+.textBubble{
+background-color:   #2b2b3b;
+width: 100%;
+height: 300px;
+
 }
 @media screen and (max-width:1000px){
   .champs{
@@ -126,7 +145,7 @@ overflow: hidden;
 }
 @media screen and (max-width:500px){
   .champs{
-  width: 40%;
+  width: 55%;
 
   display: flex;
   flex-wrap: wrap;

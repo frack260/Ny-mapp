@@ -24,12 +24,20 @@ switch (classType) {
 Player(player)
   openModal(player)
 
+
+
+
+}
+//fixar första eventet
+function firstEvent() {
+closeModal(modal)
 let getInterface = document.getElementById('interface')
 let getHeader = document.getElementById("header");
+getInterface.style.alignItems = 'flex-start'
 console.log(getInterface);
-// getInterface.innerHTML = '<img class=""src=" '+classType+'.jpg" </img>'
-
-
+easyEvent(1)
+getHeader.innerHTML = easyEventHeader
+getInterface.innerHTML = easyEventInterface
 
 }
 function event (easyEvent) {
@@ -42,14 +50,14 @@ const overlay = document.getElementById('overlay')
 const modal = document.getElementById('modal')
 const modalBody = document.getElementById('modal-body')
 
-
+//så man kan stänga på x
 closeModalButtons.forEach(button  => {
   button.addEventListener("click", () => {
 const modal = button.closest('.modal')
 closeModal(modal)
   })
 });
-
+//så man kan stänga genoma tt trycka på overlay
 overlay.addEventListener('click', () =>{
   const modals = document.querySelectorAll('.modal.active')
   modals.forEach(modal => {
@@ -65,16 +73,17 @@ function openModal(classType, smart, styrka, karisma, atletisk, tur) {
   this.karisma = karisma
   this.atletisk = atletisk
   this.tur = tur
+  var text =   '<ul> <li>Intiligens  '+ player.smart+'</li> <li>Styrka '+ player.styrka+'</li><li>Karisma '+ player.karisma+'</li><li>Atletisk '+ player.atletisk+'</li><li>Tur '+ player.tur+'</li></ul><button onclick="firstEvent()" type="button" name="button">Startgame</button>'
 switch (player.classType) {
   case "stefan":
-modalBody.innerHTML = '<p> hello'+player.classType+'</p>';
+modalBody.innerHTML = '<p> hello'+player.classType+'</p>' + text +'   ';
   modal.classList.add('active')
   overlay.classList.add('active')
 
 
     break;
     case "jimmie":
-  modalBody.innerHTML = '<p> Alex även känd som'+player.classType+'</p>';
+  modalBody.innerHTML = '<p> Alex även känd som'+player.classType+'</p>' + text +'  ';
     modal.classList.add('active')
     overlay.classList.add('active')
 
