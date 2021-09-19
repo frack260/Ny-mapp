@@ -4,19 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta charset="utf-8">
+
+
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
   <body>
-<header>
+<header id="header">
   <h2>Pick your champ</h2>
 </header>
-<div class="interface">
+<div id="interface"class="interface">
+
   <div class="champs">
   <div class="champ">
     <img src="" alt="">
   </div>
-   <div class="champ">
+   <div onclick=" startGame('stefan') "class="champ">
+      <img src="stefan.jpg" alt="">
+    </div>
+    <div onclick=" startGame('jimmie') " class="champ">
+      <img src="" alt="">
+    </div>
+    <div class="champ">
+      <img src="" alt="">
+    </div>
+    <div class="champ">
       <img src="" alt="">
     </div>
     <div class="champ">
@@ -56,7 +68,22 @@
 
 </div>
 
+<div id="modal"class="modal">
+  <div class="modal-header">
+<div class="title">
+  exampel
+</div>
+<button data-close-button class="close-button"type="button" name="button">&times;</button>
+  </div>
+  <div id="modal-body"class="modal-body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+<div id="overlay">
 
+</div>
+<script src="player.js" charset="utf-8"></script>
 
+<script src="main.js" charset="utf-8"></script>
   </body>
 </html>

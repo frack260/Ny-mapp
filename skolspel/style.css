@@ -4,6 +4,67 @@ padding: 0;
 
 
 }
+.modal{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+transition: 200ms ease-in-out;
+border: 1px solid black;
+border-radius: 10px;
+z-index: 10;
+background-color: white;
+width: 500px;
+max-width: 80%;
+}
+.modal.active{
+transform: translate(-50%, -50%) scale(1);
+
+}
+.modal-header{
+padding: 10px 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: solid black 1px;
+}
+
+.modal-header .title{
+
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-header .close-button{
+cursor: pointer;
+border: none;
+outline: none;
+background: none;
+font-size: 1.25rem;
+font-weight: bold;
+
+
+}
+
+.modal-body{
+padding: 10px 15px;
+
+}
+#overlay{
+position: fixed;
+transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+#overlay.active{
+opacity: 1;
+pointer-events: all;
+
+}
 
 header{
 width: 100%;
@@ -27,7 +88,6 @@ body{
 
 }
 .interface{
-background-color: blue;
 width: 100%;
 height: 500px;
 display: flex;
@@ -37,15 +97,30 @@ justify-content: center;
 }
 .champs{
 width: 20%;
-height: 250px;
-border: 1px solid black;
+height: fit-content;
 display: flex;
 flex-wrap: wrap;
+overflow: auto;
+
 }
 
+img{
 
+width: 100%
+}
 .champ{
-width: 20%;
-height: 60.5px;
+  display: flex;
+  align-items: center;
+  width: 24.2%;
+  height: 60.5px;
 border: 1px solid white;
+overflow: hidden;
+}
+@media screen and (max-width:600px){
+  .champs{
+  width: 40%;
+
+  display: flex;
+  flex-wrap: wrap;
+  }
 }
