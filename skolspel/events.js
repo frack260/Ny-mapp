@@ -1,12 +1,26 @@
+let bana;
+attack = 'onclick="solis()"'
+run = 'onclick="solis()"'
+giveMoney = 'onclick="solis()"'
+
+
+
+
+
+
+
+
 function easyEvent(number) {
 switch (number) {
   case 1:
-easyEventHeader = '<img class="img1"src=" images/'+player.classType+'.jpg" </img><ul class="goodGuy"> <li>Intiligens  '+ player.smart+'</li> <li>Styrka '+ player.styrka+'</li><li>Karisma '+ player.karisma+'</li><li>Atletisk '+ player.atletisk+'</li><li>Tur '+ player.tur+'</li></ul>';
-easyEventInterface = '<div class="textBubble">   </div> <div>   </div>  ';
+
+
+bana = new Bana(attack, run, giveMoney, story = "you jommam", image = "woods"  )
 
     break;
   default:
 
 }
-return easyEvent;
+return bana;
+event(bana, enemy)
 }

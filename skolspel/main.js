@@ -1,4 +1,8 @@
 let player;
+let enemy00 = new Enemy("Troll", 50, 50, 50, 50, 50)
+
+
+
 
 //startar spelet
 function startGame(classType) {
@@ -28,20 +32,40 @@ Player(player)
 
 
 }
+
+
+
+// genererar nummer till vilket random event som ska hända
+let number = (Math.floor((Math.random()*10)+1));
+let  enemyChoice = (Math.floor((Math.random()*10)+1));
+
+
 //fixar första eventet
-function firstEvent() {
+function firstEvent(number, enemyChoice) {
+  enemyEvent(1)
+  easyEvent(1)
 closeModal(modal)
-let getInterface = document.getElementById('interface')
-let getHeader = document.getElementById("header");
-getInterface.style.alignItems = 'flex-start'
-console.log(getInterface);
-easyEvent(1)
-getHeader.innerHTML = easyEventHeader
-getInterface.innerHTML = easyEventInterface
 
 }
-function event (easyEvent) {
+function Bana (choice1, choice2, choice3, story, image, enemyType, smart, styrka, karisma, atletisk, tur) {
+  this.enemyType = enemyType
+  this.smart = smart
+  this.styrka = styrka
+  this.karisma = karisma
+  this.atletisk = atletisk
+  this.tur = tur
 
+  let getInterface = document.getElementById('interface')
+  let getHeader = document.getElementById("header");
+  getInterface.style.display = 'block'
+  getHeader.style.height = '200px'
+  console.log(getInterface);
+  //sätter upp event backgrund
+  getHeader.innerHTML ='<img class="img1"src=" images/'+player.classType+'.jpg" </img><ul class="goodGuy"> <li>Intiligens  '+ player.smart+'</li> <li>Styrka '+ player.styrka+'</li><li>Karisma '+ player.karisma+'</li><li>Atletisk '+ player.atletisk+'</li><li>Tur '+ player.tur+'</li></ul> <div>    <button '+ choice1 +' type="button" name="button">'+ choice1 +' </button> <button '+ choice2 +' type="button" name="button">'+ choice2 +'</button> <button '+ choice3 +'  type="button" name="button"> '+ choice3 +' </button> </div>  ';
+  getInterface.innerHTML = '<div class="textBubble"> <p>'+ story +'  </p>  </div > <div class="eventBubble">   </div>  ';
+  let eventBubble = document.querySelector('.eventBubble')
+  eventBubble.style.backgroundImage = "url('images/"+ image+".jpg')";
+     eventBubble.innerHTML =  '<div class="enemyBackground"><img class="img2 "src=" images/'+enemy.enemyType+'.jpg" </img><ul class="badGuy"> <li>Intiligens  '+ enemy.smart+'</li> <li>Styrka '+ enemy.styrka+'</li><li>Karisma '+ enemy.karisma+'</li><li>Atletisk '+ enemy.atletisk+'</li><li>Tur '+ enemy.tur+'</li></ul></div> '
 }
 //för se stats effekt effekten
 const openModalButtons = document.querySelectorAll( '[data-modal-target] ')
@@ -100,4 +124,8 @@ if (modal == null) return
 modal.classList.remove('active')
 overlay.classList.remove('active')
 
+}
+
+function solis() {
+  console.log("you made it");
 }
