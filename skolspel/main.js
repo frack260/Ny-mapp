@@ -97,7 +97,7 @@ function Bana (choice1, choice2, choice3,  story, image, enemyType, liv, smart, 
   getHeader.style.height = '200px'
   console.log(getInterface);
   //sätter upp event backgrund
-  getHeader.innerHTML ='<img class="img1"src=" images/'+player.classType.toLowerCase()+'.jpg" </img><ul class="goodGuy"> <li id="playerHealth">Health:  '+ player.liv+'</li><li>Intiligens:  '+ player.smart+'</li> <li>Strength: '+ player.styrka+'</li><li>Charisma: '+ player.karisma+'</li><li>Agility: '+ player.atletisk+'</li><li>Luck: '+ player.tur+'</li></ul> <div id="choiceButton">    <button '+ choice1 +' type="button" name="button">'+ choice1 +' </button> <button '+ choice2 +' type="button" name="button">'+ choice2 +'</button> <button '+ choice3 +'  type="button" name="button"> '+ choice3 +' </button> </div>  ';
+  getHeader.innerHTML ='<img class="img1"src=" images/'+player.classType.toUpperCase()+'.jpg" </img><ul class="goodGuy"> <li id="playerHealth">Health:  '+ player.liv+'</li><li>Intiligens:  '+ player.smart+'</li> <li>Strength: '+ player.styrka+'</li><li>Charisma: '+ player.karisma+'</li><li>Agility: '+ player.atletisk+'</li><li>Luck: '+ player.tur+'</li></ul> <div id="choiceButton">    <button '+ choice1 +' type="button" name="button">'+ choice1 +' </button> <button '+ choice2 +' type="button" name="button">'+ choice2 +'</button> <button '+ choice3 +'  type="button" name="button"> '+ choice3 +' </button> </div>  ';
   getInterface.innerHTML = '<div class="textBubble"> <p>'+ story +'  </p>  </div > <div class="eventBubble">   </div>  ';
   let eventBubble = document.querySelector('.eventBubble')
   eventBubble.style.backgroundImage = "url('images/"+ image+".jpg')";
