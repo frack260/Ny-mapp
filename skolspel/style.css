@@ -5,6 +5,13 @@ padding: 0;
 
 }
 
+
+
+h3{
+  color: orange;
+
+
+}
 .loader{
 position: fixed;
 z-index: 99;

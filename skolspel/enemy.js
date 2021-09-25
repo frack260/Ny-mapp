@@ -18,8 +18,8 @@ function enemyEvent(enemyChoice) {
   let enemy00 = new Enemy("Troll", 100, 200, 50, 150, 50, 550, 100)
   let enemy01 = new Enemy("Wolf", 50, 50, 20, 30, 20, 50, 50)
   let enemy02 = new Enemy("Gaycouple", 200, 40, 40, 10, 10, 10, 200);
-  let enemy03 = new Enemy("Obama", 30, 250, 40, 200, 350, 10, 150 )
-let enemy04 = new Enemy(" Elf", 50, 200, 100, 50, 150 )
+  let enemy03 = new Enemy("Obama", 30, 250, 40, 200, 350, 10, 300 )
+let enemy04 = new Enemy(" Elf", 50, 200, 100, 50, 150, 600,  150)
 
 switch (enemyChoice) {
   case 1:
