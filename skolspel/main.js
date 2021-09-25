@@ -146,7 +146,7 @@ function openModal(classType, liv, smart, styrka, karisma, atletisk, tur) {
   this.tur = tur
   var text =   '<ul> <li>Health  '+ player.liv+'</li> <li>Intiligens  '+ player.smart+'</li> <li>Styrka '+ player.styrka+'</li><li>Karisma '+ player.karisma+'</li><li>Atletisk '+ player.atletisk+'</li><li>Tur '+ player.tur+'</li></ul><button onclick="firstEvent1()" type="button" name="button">Startgame</button>'
 switch (player.classType) {
-  case "stefan":
+  case "oskar":
 modalBody.innerHTML = '<p> hello'+player.classType+'</p>' + text +'   ';
   modal.classList.add('active')
   overlay.classList.add('active')
