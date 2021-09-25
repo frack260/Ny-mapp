@@ -29,6 +29,13 @@ bana = new Bana(attack, run, giveMoney, story = "you jommam", image = "woods"  )
 
 bana = new Bana(attack, run, giveMoney, story = "hello", image = "animeb"  )
       break;
+      case 3:
+      var  enemyChoice = (Math.floor((Math.random()*2)+4));
+      console.log(enemyChoice);
+      enemyEvent(enemyChoice)
+
+  bana = new Bana(attack, run, giveMoney, story = "deep in dungeon", image = "dungeon"  )
+        break;
   default:
 
 }

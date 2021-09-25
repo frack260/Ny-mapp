@@ -72,7 +72,7 @@ if (score < 500) {
   console.log(number);
 
 }else if (score < 1500) {
-  var number = (Math.floor((Math.random()*10)+1));
+  var number = (Math.floor((Math.random()*1)+3));
 
 }
 console.log("loma");
