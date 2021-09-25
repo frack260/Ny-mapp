@@ -10,7 +10,6 @@ function Player(classType, liv, smart, styrka, karisma, atletisk, tur) {
 
 
 
-
 }
 
 function battle() {
@@ -76,7 +75,7 @@ openWinOrLoseModal("lose")
 }
 }else {
   openWinModal(enemy)
-
+   console.log(score);
   console.log("you won");
 }
 console.log(enemy.liv);
@@ -93,6 +92,7 @@ enemy.liv = enemy.liv - totalDamage;
 getEnemyHealth.innerHTML = 'Health '+enemy.liv
 if (enemy.liv < 0) {
 openWinModal()
+console.log(score);
 console.log("you win");
 }
 }else {

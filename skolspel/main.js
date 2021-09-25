@@ -1,6 +1,17 @@
+window.addEventListener("load", function(){
+const loader = document.querySelector('.loader')
+console.log(loader);
+loader.className += " hidden";
+});
+
+ score = 0;
+ let scoreCount = document.getElementById('score')
+
+ scoreCount.innerHTML = score
+
+
 let player;
 let enemy00 = new Enemy("Troll", 400, 500, 50, 550, 50, 550)
-
 
 
 //startar spelet
@@ -17,6 +28,9 @@ switch (classType) {
     console.log(player);
 
       break;
+      case "isac":
+player = new Player(classType,300,200, 200, 200, 200, 200  )
+        break;
   default:
 
 
@@ -37,15 +51,38 @@ Player(player)
 // genererar nummer till vilket random event som ska hända
 
 //fixar första eventet
+//updaterar score
+function scoreUpdate() {
+score += enemy.scoreGive
+scoreCount.innerHTML = score
+}
+// callar första och alla andra events
+function firstEvent1() {
+  console.log("yes it called");
+  if (modal.classList.contains("active")) {
+    console.log("hello");
+    firstEvent();
+
+  }
+}
 function firstEvent() {
-  let number = (Math.floor((Math.random()*2)+1));
-  let  enemyChoice = (Math.floor((Math.random()*2)+1));
-  enemyEvent(enemyChoice)
-  easyEvent(number)
-closeModal(modal)
+
+if (score < 500) {
+  var number = (Math.floor((Math.random()*2)+1));
+  console.log(number);
+
+}else if (score < 1500) {
+  var number = (Math.floor((Math.random()*10)+1));
 
 }
-function Bana (choice1, choice2, choice3, choice1Text, choice2Text choice3Text, story, image, enemyType, liv, smart, styrka, karisma, atletisk, tur) {
+console.log("loma");
+  easyEvent(number)
+
+  closeModal(modal)
+
+}
+
+function Bana (choice1, choice2, choice3,  story, image, enemyType, liv, smart, styrka, karisma, atletisk, tur) {
   this.enemyType = enemyType
   this.liv = liv
   this.smart = smart
@@ -106,7 +143,7 @@ function openModal(classType, liv, smart, styrka, karisma, atletisk, tur) {
   this.karisma = karisma
   this.atletisk = atletisk
   this.tur = tur
-  var text =   '<ul> <li>Health  '+ player.liv+'</li> <li>Intiligens  '+ player.smart+'</li> <li>Styrka '+ player.styrka+'</li><li>Karisma '+ player.karisma+'</li><li>Atletisk '+ player.atletisk+'</li><li>Tur '+ player.tur+'</li></ul><button onclick="firstEvent()" type="button" name="button">Startgame</button>'
+  var text =   '<ul> <li>Health  '+ player.liv+'</li> <li>Intiligens  '+ player.smart+'</li> <li>Styrka '+ player.styrka+'</li><li>Karisma '+ player.karisma+'</li><li>Atletisk '+ player.atletisk+'</li><li>Tur '+ player.tur+'</li></ul><button onclick="firstEvent1()" type="button" name="button">Startgame</button>'
 switch (player.classType) {
   case "stefan":
 modalBody.innerHTML = '<p> hello'+player.classType+'</p>' + text +'   ';
@@ -122,6 +159,13 @@ modalBody.innerHTML = '<p> hello'+player.classType+'</p>' + text +'   ';
 
 
       break;
+      case "isac":
+    modalBody.innerHTML = '<p> isac även känd som Marklund '+player.classType+'</p>' + text +'  ';
+      modal.classList.add('active')
+      overlay.classList.add('active')
+
+
+        break;
 
   default:
   modal.classList.add('active')
@@ -170,7 +214,7 @@ function openWinModal() {
     button.removeEventListener('click',closeBut)  })
 
   overlay.removeEventListener('click',closeOverLay )
-  modalBody.innerHTML = 'you defeated a'+enemy.enemyType +' <button  onclick="firstEvent( )  "type="button" name="button">continue</button> '
+  modalBody.innerHTML = 'you defeated a'+enemy.enemyType +' <button  onclick=" scoreUpdate(),firstEvent1()  "type="button" name="button">continue</button> '
   modal.classList.add('active')
   overlay.classList.add('active')
 }

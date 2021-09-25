@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta charset="utf-8">
@@ -8,6 +9,10 @@
     <title></title>
   </head>
   <body>
+    <div class="loader hidden">
+<img src="images/loading1.gif" alt="">
+    </div>
+    <h3 id="score">hello</h3>
 <header id="header">
   <h2>Pick your champ</h2>
 </header>
@@ -22,8 +27,8 @@
     <div onclick=" startGame('jimmie') " class="champ">
       <img src="" alt="">
     </div>
-    <div class="champ">
-      <img src="" alt="">
+    <div onclick="startGame('isac')"class="champ">
+      <img src="images/isac.jpg" alt="">
     </div>
     <div class="champ">
       <img src="" alt="">
@@ -80,6 +85,7 @@
 </div>
 
   </body>
+
   <script src="player.js" charset="utf-8"></script>
   <script src="enemy.js" charset="utf-8"></script>
 
