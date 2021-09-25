@@ -1,5 +1,5 @@
 let bana;
-attack = 'onclick="solis()"'
+attack = 'onclick="battle()"'
 run = 'onclick="solis()"'
 giveMoney = 'onclick="solis()"'
 
@@ -18,6 +18,9 @@ switch (number) {
 bana = new Bana(attack, run, giveMoney, story = "you jommam", image = "woods"  )
 
     break;
+    case 2:
+bana = new Bana(attack, run, giveMoney, story = "hello", image = "animeb"  )
+      break;
   default:
 
 }
