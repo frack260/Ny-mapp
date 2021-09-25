@@ -17,7 +17,7 @@ let enemy00 = new Enemy("Troll", 400, 500, 50, 550, 50, 550)
 //startar spelet
 function startGame(classType) {
 switch (classType) {
-  case "stefan":
+  case "oskar":
   player = new Player(classType, 300, 150, 150, 150, 100, 100)
   console.log(player);
 
